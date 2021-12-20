@@ -10,7 +10,7 @@ const fetch = require('node-fetch');
 
 const body = {
   description: "Netlify build hook",
-  callbackURL: npm_config_url,
+  callbackURL: process.argv[2], // npm_config_url,
   idModel: TRELLO_LIST_ID
 }
 
